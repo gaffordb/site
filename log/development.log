@@ -1089,3 +1089,695 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 48ms (Views: 45.7ms)
 
 
+Started GET "/" for 127.0.0.1 at 2020-02-19 16:11:50 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 702ms (Views: 401.8ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2020-02-19 16:11:54 -0600
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 59ms (Views: 50.5ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2020-02-19 16:11:56 -0600
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 49ms (Views: 44.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-19 16:11:57 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 48ms (Views: 45.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2020-02-19 16:11:58 -0600
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 47ms (Views: 43.5ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2020-02-19 16:11:59 -0600
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 47ms (Views: 44.6ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2020-02-19 16:17:33 -0600
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 682ms (Views: 385.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2020-02-19 16:17:39 -0600
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 38ms (Views: 35.7ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2020-02-19 16:17:41 -0600
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 51ms (Views: 47.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-19 16:17:44 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2063.8ms)
+Completed 500 Internal Server Error in 2079ms
+
+
+  
+ActionView::Template::Error (401 Unauthorized):
+    2: <h1>Internet Website</h1>
+    3: <p>
+    4:   This is the home page for this internet website.
+    5:   <%= get_quote() %>
+    6: </p>
+  
+app/helpers/application_helper.rb:14:in `get_quote'
+app/views/static_pages/home.html.erb:5:in `_app_views_static_pages_home_html_erb__2800838610800351111_70266422683560'
+Started GET "/" for 127.0.0.1 at 2020-02-19 16:18:20 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (192.0ms)
+Completed 500 Internal Server Error in 508ms
+
+
+  
+ActionView::Template::Error (401 Unauthorized):
+    2: <h1>Internet Website</h1>
+    3: <p>
+    4:   This is the home page for this internet website.
+    5:   <%= get_quote() %>
+    6: </p>
+  
+app/helpers/application_helper.rb:14:in `get_quote'
+app/views/static_pages/home.html.erb:5:in `_app_views_static_pages_home_html_erb___801592825584955308_70269443400040'
+Started GET "/" for 127.0.0.1 at 2020-02-19 16:18:25 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (90.9ms)
+Completed 500 Internal Server Error in 97ms
+
+
+  
+ActionView::Template::Error (401 Unauthorized):
+    2: <h1>Internet Website</h1>
+    3: <p>
+    4:   This is the home page for this internet website.
+    5:   <%= get_quote() %>
+    6: </p>
+  
+app/helpers/application_helper.rb:14:in `get_quote'
+app/views/static_pages/home.html.erb:5:in `_app_views_static_pages_home_html_erb___801592825584955308_70269445571980'
+Started GET "/" for 127.0.0.1 at 2020-02-19 16:19:18 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (90.6ms)
+Completed 500 Internal Server Error in 97ms
+
+
+  
+ActionView::Template::Error (401 Unauthorized):
+    2: <h1>Internet Website</h1>
+    3: <p>
+    4:   This is the home page for this internet website.
+    5:   <%= get_quote() %>
+    6: </p>
+  
+app/helpers/application_helper.rb:14:in `get_quote'
+app/views/static_pages/home.html.erb:5:in `_app_views_static_pages_home_html_erb___801592825584955308_70269442995100'
+Started GET "/" for 127.0.0.1 at 2020-02-19 16:23:37 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (229.6ms)
+Completed 500 Internal Server Error in 550ms
+
+
+  
+ActionView::Template::Error (401 Unauthorized):
+    2: <h1>Internet Website</h1>
+    3: <p>
+    4:   This is the home page for this internet website.
+    5:   <%= get_quote() %>
+    6: </p>
+  
+app/helpers/application_helper.rb:14:in `get_quote'
+app/views/static_pages/home.html.erb:5:in `_app_views_static_pages_home_html_erb___451042958325831201_70182695533620'
+Started GET "/" for 127.0.0.1 at 2020-02-19 16:26:56 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (236.5ms)
+Completed 500 Internal Server Error in 549ms
+
+
+  
+ActionView::Template::Error (no implicit conversion of nil into String):
+    2: <h1>Internet Website</h1>
+    3: <p>
+    4:   This is the home page for this internet website.
+    5:   <%= get_quote() %>
+    6: </p>
+  
+app/helpers/application_helper.rb:16:in `+'
+app/helpers/application_helper.rb:16:in `get_quote'
+app/views/static_pages/home.html.erb:5:in `_app_views_static_pages_home_html_erb___3863395133607860418_70159269281680'
+Started GET "/" for 127.0.0.1 at 2020-02-19 16:30:14 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (280.3ms)
+Completed 500 Internal Server Error in 577ms
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    2: <h1>Internet Website</h1>
+    3: <p>
+    4:   This is the home page for this internet website.
+    5:   <%= get_quote() %>
+    6: </p>
+  
+app/helpers/application_helper.rb:18:in `get_quote'
+app/views/static_pages/home.html.erb:5:in `_app_views_static_pages_home_html_erb__3827584754790048095_70315216381500'
+Started GET "/" for 127.0.0.1 at 2020-02-19 16:33:13 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (322.8ms)
+Completed 500 Internal Server Error in 666ms
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    2: <h1>Internet Website</h1>
+    3: <p>
+    4:   This is the home page for this internet website.
+    5:   <%= get_quote() %>
+    6: </p>
+  
+app/helpers/application_helper.rb:19:in `get_quote'
+app/views/static_pages/home.html.erb:5:in `_app_views_static_pages_home_html_erb__1641661270049375308_70122672225260'
+Started GET "/" for 127.0.0.1 at 2020-02-19 16:33:56 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (250.2ms)
+Completed 500 Internal Server Error in 555ms
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    2: <h1>Internet Website</h1>
+    3: <p>
+    4:   This is the home page for this internet website.
+    5:   <%= get_quote() %>
+    6: </p>
+  
+app/helpers/application_helper.rb:19:in `get_quote'
+app/views/static_pages/home.html.erb:5:in `_app_views_static_pages_home_html_erb__492787148332877572_70225532231940'
+Started GET "/" for 127.0.0.1 at 2020-02-19 16:35:17 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (242.1ms)
+Completed 500 Internal Server Error in 567ms
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    2: <h1>Internet Website</h1>
+    3: <p>
+    4:   This is the home page for this internet website.
+    5:   <%= get_quote() %>
+    6: </p>
+  
+app/helpers/application_helper.rb:19:in `get_quote'
+app/views/static_pages/home.html.erb:5:in `_app_views_static_pages_home_html_erb___448583840659684457_70141851375400'
+Started GET "/" for 127.0.0.1 at 2020-02-19 16:36:46 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (260.8ms)
+Completed 500 Internal Server Error in 567ms
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    2: <h1>Internet Website</h1>
+    3: <p>
+    4:   This is the home page for this internet website.
+    5:   <%= get_quote() %>
+    6: </p>
+  
+app/helpers/application_helper.rb:20:in `get_quote'
+app/views/static_pages/home.html.erb:5:in `_app_views_static_pages_home_html_erb___3710949201922853766_70294567109560'
+Started GET "/" for 127.0.0.1 at 2020-02-19 16:39:02 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+Started GET "/" for 127.0.0.1 at 2020-02-19 16:44:49 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (272.4ms)
+Completed 500 Internal Server Error in 769ms
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    2: <h1>Internet Website</h1>
+    3: <p>
+    4:   This is the home page for this internet website.
+    5:   <%= get_quote() %>
+    6: </p>
+  
+app/helpers/application_helper.rb:20:in `[]'
+app/helpers/application_helper.rb:20:in `get_quote'
+app/views/static_pages/home.html.erb:5:in `_app_views_static_pages_home_html_erb___493818670950749339_70162534165040'
+Started GET "/" for 127.0.0.1 at 2020-02-19 16:45:49 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (297.8ms)
+Completed 500 Internal Server Error in 611ms
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    2: <h1>Internet Website</h1>
+    3: <p>
+    4:   This is the home page for this internet website.
+    5:   <%= get_quote() %>
+    6: </p>
+  
+app/helpers/application_helper.rb:19:in `[]'
+app/helpers/application_helper.rb:19:in `get_quote'
+app/views/static_pages/home.html.erb:5:in `_app_views_static_pages_home_html_erb___3383195789566368372_70330099128040'
+Started GET "/" for 127.0.0.1 at 2020-02-19 16:47:23 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (321.5ms)
+Completed 500 Internal Server Error in 686ms
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    2: <h1>Internet Website</h1>
+    3: <p>
+    4:   This is the home page for this internet website.
+    5:   <%= get_quote() %>
+    6: </p>
+  
+app/helpers/application_helper.rb:19:in `[]'
+app/helpers/application_helper.rb:19:in `get_quote'
+app/views/static_pages/home.html.erb:5:in `_app_views_static_pages_home_html_erb__867424665533334345_70216064491140'
+Started GET "/" for 127.0.0.1 at 2020-02-19 16:47:59 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1229.8ms)
+Completed 500 Internal Server Error in 1837ms
+
+
+  
+ActionView::Template::Error (429 Too Many Requests):
+    2: <h1>Internet Website</h1>
+    3: <p>
+    4:   This is the home page for this internet website.
+    5:   <%= get_quote() %>
+    6: </p>
+  
+app/helpers/application_helper.rb:15:in `get_quote'
+app/views/static_pages/home.html.erb:5:in `_app_views_static_pages_home_html_erb___3946216671907371224_70207152005500'
+Started GET "/" for 127.0.0.1 at 2020-02-19 16:50:34 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1250.1ms)
+Completed 500 Internal Server Error in 1622ms
+
+
+  
+ActionView::Template::Error (429 Too Many Requests):
+    2: <h1>Internet Website</h1>
+    3: <p>
+    4:   This is the home page for this internet website.
+    5:   <%= get_quote() %>
+    6: </p>
+  
+app/helpers/application_helper.rb:15:in `get_quote'
+app/views/static_pages/home.html.erb:5:in `_app_views_static_pages_home_html_erb___2545073855721885938_70301224452420'
+Started GET "/" for 127.0.0.1 at 2020-02-19 16:54:52 -0600
+  
+SyntaxError (/Users/BGafford/notes/notes-7th/software/homework/site/app/helpers/application_helper.rb:18: syntax error, unexpected '{', expecting keyword_then or ';' or '\n'
+...se.kind_of? Net::HttpSuccess) {
+...                              ^
+/Users/BGafford/notes/notes-7th/software/homework/site/app/helpers/application_helper.rb:20: syntax error, unexpected '}', expecting keyword_end
+    } else {
+    ^
+/Users/BGafford/notes/notes-7th/software/homework/site/app/helpers/application_helper.rb:21: void value expression
+        return "No more quotes today, sorry! ...
+               ^
+/Users/BGafford/notes/notes-7th/software/homework/site/app/helpers/application_helper.rb:22: syntax error, unexpected '}', expecting keyword_end
+    }
+    ^):
+  
+app/helpers/application_helper.rb:18: syntax error, unexpected '{', expecting keyword_then or ';' or '\n'
+app/helpers/application_helper.rb:20: syntax error, unexpected '}', expecting keyword_end
+app/helpers/application_helper.rb:21: void value expression
+app/helpers/application_helper.rb:22: syntax error, unexpected '}', expecting keyword_end
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/static_pages_controller.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2020-02-19 16:55:54 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1258.7ms)
+Completed 500 Internal Server Error in 1599ms
+
+
+  
+ActionView::Template::Error (429 Too Many Requests):
+    2: <h1>Internet Website</h1>
+    3: <p>
+    4:   This is the home page for this internet website.
+    5:   <%= get_quote() %>
+    6: </p>
+  
+app/helpers/application_helper.rb:15:in `get_quote'
+app/views/static_pages/home.html.erb:5:in `_app_views_static_pages_home_html_erb__2799926277668395649_70289844504180'
+Started GET "/" for 127.0.0.1 at 2020-02-19 17:04:38 -0600
+  
+SyntaxError (/Users/BGafford/notes/notes-7th/software/homework/site/app/helpers/application_helper.rb:33: syntax error, unexpected end-of-input, expecting keyword_end
+  end
+     ^):
+  
+app/helpers/application_helper.rb:33: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/static_pages_controller.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2020-02-19 17:06:03 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1335.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 2236ms (Views: 1920.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-19 17:06:13 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1191.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 1233ms (Views: 1230.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-19 17:07:48 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1230.5ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 2082ms (Views: 1786.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-19 17:09:01 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1314.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 2220ms (Views: 1917.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-19 17:09:08 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1279.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 1348ms (Views: 1344.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-19 22:06:18 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (582.2ms)
+Completed 500 Internal Server Error in 899ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `content' for #<#<Class:0x00007fc9353b19a0>:0x00007fc938c4ac58>
+Did you mean?  content_for):
+    4:   This is the home page for this internet website.
+    5: </p>
+    6: <p>
+    7:   <%= get_quote() %>
+    8: </p>
+  
+app/helpers/application_helper.rb:25:in `get_quote'
+app/views/static_pages/home.html.erb:7:in `_app_views_static_pages_home_html_erb__3963284969086074508_70251078393180'
+Started GET "/" for 127.0.0.1 at 2020-02-19 22:12:08 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (216.8ms)
+Completed 500 Internal Server Error in 340ms
+
+
+  
+ActionView::Template::Error (no implicit conversion of StringIO into String):
+    4:   This is the home page for this internet website.
+    5: </p>
+    6: <p>
+    7:   <%= get_quote() %>
+    8: </p>
+  
+app/helpers/application_helper.rb:25:in `get_quote'
+app/views/static_pages/home.html.erb:7:in `_app_views_static_pages_home_html_erb__805523419329310984_70245698726720'
+Started GET "/" for 127.0.0.1 at 2020-02-19 22:12:45 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (294.7ms)
+Completed 500 Internal Server Error in 596ms
+
+
+  
+ActionView::Template::Error (no implicit conversion of StringIO into String):
+    4:   This is the home page for this internet website.
+    5: </p>
+    6: <p>
+    7:   <%= get_quote() %>
+    8: </p>
+  
+app/helpers/application_helper.rb:26:in `get_quote'
+app/views/static_pages/home.html.erb:7:in `_app_views_static_pages_home_html_erb__3193976004005952397_70201758434720'
+Started GET "/" for 127.0.0.1 at 2020-02-19 22:13:18 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (240.9ms)
+Completed 500 Internal Server Error in 539ms
+
+
+  
+ActionView::Template::Error (no implicit conversion of StringIO into String):
+    4:   This is the home page for this internet website.
+    5: </p>
+    6: <p>
+    7:   <%= get_quote() %>
+    8: </p>
+  
+app/helpers/application_helper.rb:26:in `get_quote'
+app/views/static_pages/home.html.erb:7:in `_app_views_static_pages_home_html_erb__3935514197439652372_70221239683380'
+Started GET "/" for 127.0.0.1 at 2020-02-19 22:15:16 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (313.7ms)
+Completed 500 Internal Server Error in 610ms
+
+
+  
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    4:   This is the home page for this internet website.
+    5: </p>
+    6: <p>
+    7:   <%= get_quote() %>
+    8: </p>
+  
+app/helpers/application_helper.rb:32:in `get_quote'
+app/views/static_pages/home.html.erb:7:in `_app_views_static_pages_home_html_erb___2534447457614899708_70236554332440'
+Started GET "/" for 127.0.0.1 at 2020-02-19 22:16:02 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (493.3ms)
+Completed 500 Internal Server Error in 617ms
+
+
+  
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    4:   This is the home page for this internet website.
+    5: </p>
+    6: <p>
+    7:   <%= get_quote() %>
+    8: </p>
+  
+app/helpers/application_helper.rb:31:in `get_quote'
+app/views/static_pages/home.html.erb:7:in `_app_views_static_pages_home_html_erb___1309669341781352391_70216526884340'
+Started GET "/" for 127.0.0.1 at 2020-02-19 22:16:58 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (218.1ms)
+Completed 500 Internal Server Error in 340ms
+
+
+  
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    4:   This is the home page for this internet website.
+    5: </p>
+    6: <p>
+    7:   <%= get_quote() %>
+    8: </p>
+  
+app/helpers/application_helper.rb:31:in `get_quote'
+app/views/static_pages/home.html.erb:7:in `_app_views_static_pages_home_html_erb__3628231507593893907_70120809379000'
+Started GET "/" for 127.0.0.1 at 2020-02-19 22:18:12 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (258.3ms)
+Completed 500 Internal Server Error in 562ms
+
+
+  
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    4:   This is the home page for this internet website.
+    5: </p>
+    6: <p>
+    7:   <%= get_quote() %>
+    8: </p>
+  
+app/helpers/application_helper.rb:31:in `get_quote'
+app/views/static_pages/home.html.erb:7:in `_app_views_static_pages_home_html_erb__445976011007094125_70355292284420'
+Started GET "/" for 127.0.0.1 at 2020-02-19 22:18:16 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (196.0ms)
+Completed 500 Internal Server Error in 205ms
+
+
+  
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    4:   This is the home page for this internet website.
+    5: </p>
+    6: <p>
+    7:   <%= get_quote() %>
+    8: </p>
+  
+app/helpers/application_helper.rb:31:in `get_quote'
+app/views/static_pages/home.html.erb:7:in `_app_views_static_pages_home_html_erb__445976011007094125_70355310156680'
+Started GET "/" for 127.0.0.1 at 2020-02-19 22:18:54 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (306.3ms)
+Completed 500 Internal Server Error in 618ms
+
+
+  
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    4:   This is the home page for this internet website.
+    5: </p>
+    6: <p>
+    7:   <%= get_quote() %>
+    8: </p>
+  
+app/helpers/application_helper.rb:31:in `get_quote'
+app/views/static_pages/home.html.erb:7:in `_app_views_static_pages_home_html_erb__4532967264546521548_70332783192920'
+Started GET "/" for 127.0.0.1 at 2020-02-19 22:20:03 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+Started GET "/" for 127.0.0.1 at 2020-02-19 22:24:14 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+Started GET "/" for 127.0.0.1 at 2020-02-19 22:25:27 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1395.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 1930ms (Views: 1785.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-19 22:26:34 -0600
+  
+SyntaxError (/Users/BGafford/notes/notes-7th/software/homework/site/app/helpers/application_helper.rb:34: syntax error, unexpected keyword_end, expecting end-of-input
+  end
+  ^~~):
+  
+app/helpers/application_helper.rb:34: syntax error, unexpected keyword_end, expecting end-of-input
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/static_pages_controller.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2020-02-19 22:30:10 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1374.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 2036ms (Views: 1739.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-19 22:31:22 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 452ms (Views: 312.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-19 22:31:24 -0600
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 51ms (Views: 48.5ms)
+
+
