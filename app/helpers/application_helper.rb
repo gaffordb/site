@@ -13,23 +13,25 @@ module ApplicationHelper
   end
 
   def get_quote()
-    if false
-    begin
-    content = open("https://quotes.rest/qod?language=en",
-                      "X-TheySaidSo-Api-Secret" => "shoot")
-    resp_err = false
-    rescue OpenURI::HTTPError
-      resp_err = true
-      quote = "No more quotes today, sorry! There will be more tomorrow..."
-    unless resp_err
-      data = JSON.parse(content)['contents']
-      quote = data['quotes']['quote'] + '\n' +
-          data['quotes']['author']
+    # Read in quotefile
+    content = IO.readlines("app/assets/static/quotes.txt")
+
+    # Pick a random line
+    ind = rand(content.size)
+
+    # Find the nearby quote
+    until (content[ind] == "----\n")
+      ind -= 1
     end
+
+    ind += 1
+    quote = ""
+
+    # Get the quote
+    until(content[ind] == "----\n")
+      quote += content[ind] + "\n"
+      ind += 1
     end
-    end
-    quote = "No more quotes today, sorry! There will be more tomorrow..."
-    junk = "Also, here's a random number: #{rand(100)}"
-    quote + junk
-    end
+    return quote
+  end
   end
