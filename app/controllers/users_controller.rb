@@ -6,7 +6,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
   def create
-    @user = User.find_or_create_by!(fingerprint = user_params[:fingerprint])
+    @user = User.find_or_create_by!(fingerprint: user_params[:fingerprint])
     @user.update(user_params)
 
     if @user.save

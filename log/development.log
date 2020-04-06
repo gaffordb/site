@@ -55038,3 +55038,157 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 72ms (Views: 67.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2020-04-06 01:26:50 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#source as HTML
+  Rendering static_pages/source.html.erb within layouts/application
+  Rendered static_pages/source.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (2.8ms)
+Completed 200 OK in 510ms (Views: 500.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?fingerprint=2892496745" for 127.0.0.1 at 2020-04-06 01:26:51 -0500
+Processing by StaticPagesController#source as HTML
+  Parameters: {"fingerprint"=>"2892496745"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."fingerprint" = ? LIMIT ?[0m  [["fingerprint", "2892496745"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/7
+Completed 302 Found in 27ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2020-04-06 01:26:51 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (1.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 85ms (Views: 73.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2020-04-06 01:28:08 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (14.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 106ms (Views: 99.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2020-04-06 01:28:09 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.erb (0.7ms)
+  Rendered users/new.html.erb within layouts/application (97.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 184ms (Views: 176.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for 127.0.0.1 at 2020-04-06 01:28:14 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gkbQuOfvqp/SgsGlmFmCKVXvpjiuRc6GLitRmCipnKhrGYbmC4cZ8zKcIQUQAiljGUFJK/slI8mTGEA3eiVsSA==", "user"=>{"fingerprint"=>"2892496745", "name"=>"ben", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+Unpermitted parameter: :password_confirmation
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (2892496745) LIMIT ?[0m  [["LIMIT", 1]]
+Unpermitted parameter: :password_confirmation
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."fingerprint" = ? AND ("users"."id" != ?) LIMIT ?[0m  [["fingerprint", "2892496745"], ["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."fingerprint" = ? AND ("users"."id" != ?) LIMIT ?[0m  [["fingerprint", "2892496745"], ["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/7
+Completed 302 Found in 11ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2020-04-06 01:28:14 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 42ms (Views: 38.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2020-04-06 01:30:48 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (13.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 450ms (Views: 442.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2020-04-06 01:30:50 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.erb (0.7ms)
+  Rendered users/new.html.erb within layouts/application (39.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 111ms (Views: 80.2ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/signup" for 127.0.0.1 at 2020-04-06 01:30:54 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fC/JV5JUxGy2pMDIu/cnZ1UpqUtXhXYpAvmyuAYWo5OVcJ8Jfjx3AFa6IGgzrIwtGYdGWALlm2a/yqMXVJpTcw==", "user"=>{"fingerprint"=>"2892496745", "name"=>"ben", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+Unpermitted parameter: :password_confirmation
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `find_or_create_by_fingerprint!' for #<Class:0x00007faf4cd8b2d0>
+Did you mean?  find_or_create_by!):
+  
+app/controllers/users_controller.rb:9:in `create'
+Started GET "/signup" for 127.0.0.1 at 2020-04-06 01:32:40 -0500
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.erb (0.5ms)
+  Rendered users/new.html.erb within layouts/application (35.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 595ms (Views: 574.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/signup" for 127.0.0.1 at 2020-04-06 01:32:45 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1DUe8l0pKuEujOjOUtvt/oHhpVFk5ogB/szlo/nGgiV1AO3hcqOQXi0y9GI2BVZKpq5UbMuWES6eC9Ihm/6zfA==", "user"=>{"fingerprint"=>"2892496745", "name"=>"ben", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+Unpermitted parameter: :password_confirmation
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."fingerprint" = ? LIMIT ?[0m  [["fingerprint", "2892496745"], ["LIMIT", 1]]
+Unpermitted parameter: :password_confirmation
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."fingerprint" = ? AND ("users"."id" != ?) LIMIT ?[0m  [["fingerprint", "2892496745"], ["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."fingerprint" = ? AND ("users"."id" != ?) LIMIT ?[0m  [["fingerprint", "2892496745"], ["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/7
+Completed 302 Found in 17ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2020-04-06 01:32:45 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 43ms (Views: 36.1ms | ActiveRecord: 0.2ms)
+
+
