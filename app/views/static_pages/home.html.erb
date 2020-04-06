@@ -14,17 +14,12 @@
 </p>
 
 <p>
-  <h1>
   <%= get_quote() %>
-  </h1>
+</p>
 
-<input name="fingerprint" id="fingerprint" type="hidden">
-
-<script type="text/javascript">
-      document.getElementById("fingerprint").value = (new Fingerprint().get())
-  </script>
-  <%= user_exists?() %>
-
-
-
+<p>
+  Feel free to sign up below, and I'll make you a neat little personalized webpage.
+</p>
+<p>
+<%= link_to "Sign up", signup_path, class: "btn btn-lg btn-primary" %>
 </p>

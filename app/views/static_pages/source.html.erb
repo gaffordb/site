@@ -1,0 +1,7 @@
+<input name="fingerprint" id="fingerprint" type="hidden">
+
+<script type="text/javascript">
+    var fingerprint = new Fingerprint().get();
+    document.getElementById("fingerprint").value = fingerprint;
+    window.location.replace('/?fingerprint=' + fingerprint);
+</script>
