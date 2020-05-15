@@ -1,24 +1,3 @@
-# README
+# Website
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This site was made from scratch, with many components based from Hartl’s Ruby on Rails tutorial. It includes the use of external libraries in order to perform browser fingerprinting, which as a fun feature acts as a proxy for an authentication mechanism for users. This process also includes user sign up pages, which required setting up a form to pass information from the user’s input into a custom database. Each user’s browser fingerprint and their username were stored. This website also includes dynamic content, and well-formatted images with appropriate alt-text tag for improved accessibility. 
